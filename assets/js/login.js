@@ -58,6 +58,8 @@ $(function () {
           return layer.msg('登录失败！')
         }
         layer.msg('登陆成功！')
+        // 将token值存到localStorage中
+        localStorage.setItem('token',res.token)
         location.href='/index.html'
       }
 
